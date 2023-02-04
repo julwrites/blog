@@ -12,15 +12,15 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Node
-        uses: actions/setup-node@v2
+      - name: Set Node.js 16.x
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: 16.x
 
-      - name: Elm
-        uses: jorelali/setup-elm@v3
+      - name: Run install
+        uses: borales/actions-yarn@v4
         with:
-          elm-version: 0.19.1
+          cmd: install
 
       - name: Install 🔧 # This runs a series of commands as if building a live version of the project
         run: |
