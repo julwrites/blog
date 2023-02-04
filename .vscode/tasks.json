@@ -1,0 +1,12 @@
+{
+  "tasks": [
+    {
+      "name": "Dev Server",
+      "cmd": "yarn dev",
+      "cwd": "${config_dir}",
+      "tags": ["dev"],
+      "close_on_exit": true,
+      "count": 2
+    }
+  ]
+}
