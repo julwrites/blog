@@ -6,12 +6,7 @@ import sitemap from '@astrojs/sitemap';
 import vue from "@astrojs/vue";
 
 // https://astro.build/config
-import cloudflare from "@astrojs/cloudflare";
-
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://blog.tehj.io',
   integrations: [mdx(), sitemap(), vue()],
-  output: "server",
-  adapter: cloudflare()
 });
