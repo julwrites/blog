@@ -7,6 +7,6 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://tehj.io/blog',
+  site: 'https://blog.tehj.io',
   integrations: [mdx(), sitemap(), vue()],
 });
