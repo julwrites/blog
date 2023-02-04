@@ -7,6 +7,14 @@
       "tags": ["dev"],
       "close_on_exit": true,
       "count": 2
+    },
+    {
+      "name": "Build",
+      "cmd": "yarn build",
+      "cwd": "${config_dir}",
+      "tags": ["build"],
+      "close_on_exit": false,
+      "count": 3
     }
   ]
 }
