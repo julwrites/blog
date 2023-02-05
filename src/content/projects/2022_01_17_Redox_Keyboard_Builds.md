@@ -2,7 +2,7 @@
 title: "Building Redox Keyboards"
 description: "I've been using a split keyboard for some time, which I assembled using one of the cheaper kits on AliExpress, but it was time for an upgrade"
 pubDate: "Jan 17 2022"
-heroImage: "/assets/blog/2022_01_17_Redox_Keyboard_Builds/Working_Prototype.jpg"
+heroImage: "/blog/assets/blog/2022_01_17_Redox_Keyboard_Builds/Working_Prototype.jpg"
 ---
 
 I've been using a split keyboard for some time, which I assembled using one of the cheaper kits on [Aliexpress](https://www.aliexpress.com/item/33006060286.html). Some time in September 2021, my wife remarked that she also wanted a split keyboard, and that sparked in me what might be called a hacker's burning desire to build the thing. 
@@ -17,7 +17,7 @@ About $200 SGD later, I had bought enough switches for 3.25 keyboards, enough ho
 
 I got a friend to help me 3d print the cases for the prototype, and after he sent them over, I gave it a little test fitting. 
 
-![Test_Fitting.jpg](/assets/blog/2022_01_17_Redox_Keyboard_Builds/Test_Fitting.jpg)
+![Test_Fitting.jpg](/blog/assets/blog/2022_01_17_Redox_Keyboard_Builds/Test_Fitting.jpg)
 
 With a little more research we confirmed that we wanted the Redox keyboard for a couple of reasons:
 
@@ -29,7 +29,7 @@ So we ordered some cases and PCBs from [FalbaTech](https://falba.tech/) and keyc
 
 ## Flashing keyboards with QMK
 
-![Wooden_Case.jpg](/assets/blog/2022_01_17_Redox_Keyboard_Builds/Wooden_Case.jpg)
+![Wooden_Case.jpg](/blog/assets/blog/2022_01_17_Redox_Keyboard_Builds/Wooden_Case.jpg)
 
 Funny enough, I delayed the hand-wiring so long that the cases and PCBs that we ordered arrived before I had finished hand-wiring. So we went ahead and started on those first, and finished them over a weekend. It wasn't difficult to solder in the hot swap sockets, but it did give me a couple of lessons in managing the microcontrollers and working with QMK. 
 
@@ -42,19 +42,19 @@ Other than that, configuring a keyboard layout flashing the microcontrollers was
 
 The end result: My wife and I both got new split keyboards for the price of one Ergodox. 
 
-![Finished_Build_Chinks.jpg](/assets/blog/2022_01_17_Redox_Keyboard_Builds/Finished_Build_Chinks.jpg)
-![Finished_Build_Jul.jpg](/assets/blog/2022_01_17_Redox_Keyboard_Builds/Finished_Build_Jul.jpg)
+![Finished_Build_Chinks.jpg](/blog/assets/blog/2022_01_17_Redox_Keyboard_Builds/Finished_Build_Chinks.jpg)
+![Finished_Build_Jul.jpg](/blog/assets/blog/2022_01_17_Redox_Keyboard_Builds/Finished_Build_Jul.jpg)
 
 ## Hand-wiring a keyboard
 
 I then realized that I did want a second keyboard to bring to the office, so I figured I would finish my hand-wiring. This took me longer than both other keyboards combined, partly because I wanted to use the hotswap switches, and partly because stripping little sections of wire is very time-consuming. 
 
-![Hotswap_Sockets.jpg](/assets/blog/2022_01_17_Redox_Keyboard_Builds/Hotswap_Sockets.jpg)
-![Handwire_Complete.jpg](/assets/blog/2022_01_17_Redox_Keyboard_Builds/Handwire_Complete.jpg)
+![Hotswap_Sockets.jpg](/blog/assets/blog/2022_01_17_Redox_Keyboard_Builds/Hotswap_Sockets.jpg)
+![Handwire_Complete.jpg](/blog/assets/blog/2022_01_17_Redox_Keyboard_Builds/Handwire_Complete.jpg)
 Once all those were done though, it was a simple matter to assemble the pieces, and since I had already experienced the trouble with QMK, that was no issue either. 
 
 I debated for a while on whether to keep the microcontrollers inside the case, but my wife commented that it looks nice outside, and I kind of agree (we named it Hackie, and the look sort of fits the name). 
 
-![Working_Prototype.jpg](/assets/blog/2022_01_17_Redox_Keyboard_Builds/Working_Prototype.jpg)
+![Working_Prototype.jpg](/blog/assets/blog/2022_01_17_Redox_Keyboard_Builds/Working_Prototype.jpg)
 
 Overall the experience of building the three keyboards was really quite tiring but also very rewarding. There's something about being able to use the thing you've made everyday; plus it looks good and is enjoyable to use.

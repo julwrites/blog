@@ -2,7 +2,7 @@
 title: "Setting up Flutter"
 description: "I wanted to try out Flutter, but without using Android Studio"
 pubDate: "Feb 12 2022"
-heroImage: "/assets/blog/2022_02_12_Flutter_Setup/Flutter_Test_Drive.png"
+heroImage: "/blog/assets/blog/2022_02_12_Flutter_Setup/Flutter_Test_Drive.png"
 ---
 
 So my wife and I had made a goal to write a small full stack app for ourselves this year, and after a bunch of deliberation we finally settled on Flutter as our front-end framework. Partly because it was up and coming, but also partly because it already supported Android, iOS, and Web, and lately it supports Windows as well. 
@@ -17,7 +17,7 @@ But as a Vim/Emacs user, I am much more comfortable with the command line than w
 
 This downloaded another `.zip` file, which I promptly unzipped and dropped next to flutter, and with a bit of fiddling around with environment variables while referring to a [guide](https://proandroiddev.com/how-to-setup-android-sdk-without-android-studio-6d60d0f2812a) I finally got it to work with the following folder structure:
 
-![Android SDK Cmdline Tools](/assets/blog/2022_02_12_Flutter_Setup/Android_SDK_Cmdline_Tools.png)
+![Android SDK Cmdline Tools](/blog/assets/blog/2022_02_12_Flutter_Setup/Android_SDK_Cmdline_Tools.png)
 
 Some things to note: 
 1. We do need to add `ANDROID_HOME` to environment variables
@@ -32,11 +32,11 @@ Out of sheer frustration, I tried installing Android Studio, promptly regretted 
 
 And then after running `flutter doctor` again:
 
-![Flutter Doctor License Missing](/assets/blog/2022_02_12_Flutter_Setup/Flutter_Doctor_License_Missing.png)
+![Flutter Doctor License Missing](/blog/assets/blog/2022_02_12_Flutter_Setup/Flutter_Doctor_License_Missing.png)
 
 And following the advice, we finally got to an acceptable state
 
-![Flutter Doctor Licensed](/assets/blog/2022_02_12_Flutter_Setup/Flutter_Doctor_Licensed.png)
+![Flutter Doctor Licensed](/blog/assets/blog/2022_02_12_Flutter_Setup/Flutter_Doctor_Licensed.png)
 
 Of course, there are still some errors there, but since I don't yet intend to develop Windows apps on Flutter, and I didn't intend to use Android Studio to begin with, this is fine. 
 
@@ -46,6 +46,6 @@ Since I'm using [CoC](https://github.com/neoclide/coc.nvim), I just opted for `c
 
 I did a quick test drive following the [Flutter guide](https://docs.flutter.dev/get-started/test-drive?tab=terminal), and in about a minute I had a web app running on my browser. Pretty nifty!  
 
-![Flutter Test Drive](/assets/blog/2022_02_12_Flutter_Setup/Flutter_Test_Drive.png)
+![Flutter Test Drive](/blog/assets/blog/2022_02_12_Flutter_Setup/Flutter_Test_Drive.png)
 
 I'll get to more configuration on Neovim another day, but for now this looks promising for my own development. 

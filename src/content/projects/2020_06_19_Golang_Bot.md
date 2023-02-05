@@ -2,7 +2,7 @@
 title: "Re-writing my Telegram Bot in Golang"
 description: "I had originally written a bot for Telegram, but wanted to re-implement it in a more future-proof manner"
 pubDate: "Jun 19 2020"
-heroImage: "/assets/blog/2020_06_19_Golang_Bot/ScriptureBot.png"
+heroImage: "/blog/assets/blog/2020_06_19_Golang_Bot/ScriptureBot.png"
 ---
 
 I had originally written a bot for Telegram (originally named Biblica Bot) which was intended to be a bot for quick reference to the bible. It had a few nifty (at least to me) features:
@@ -17,7 +17,7 @@ I had originally written a bot for Telegram (originally named Biblica Bot) which
 
 The original was written in Python - a learning experience in and of itself - using WebApp to host the service on Google App Engine. It used Google App Engine's blob store to keep track of user preferences (version, current actions, subscriptions, etc...) and had a cron job which would also trigger subscriptions at a fixed time every day. I didn't get round to making that fixed time into a user choice before moving on.
 
-![ScriptureBot.png](/assets/blog/2020_06_19_Golang_Bot/ScriptureBot.png)
+![ScriptureBot.png](/blog/assets/blog/2020_06_19_Golang_Bot/ScriptureBot.png)
 
 This also became a way for me to enhance my knowledge of back-end development, REST API usage, and chat bots in general. I had plans to extend the bot to handle multiple platforms (why stop at Telegram?) which similarly exposed chat bot API, and had managed to refactor the Python 2 version so that the framework was extensible - and then it sunsetted, and with it most of my motivation to continue developing the bot in Python 2.
 
@@ -28,7 +28,7 @@ So I began to develop in Golang, and here are some of the walls I hit (and there
 ## 1. Hosting
 Since I was using Google App Engine, most of the complexity was taken care of. It was a bit of a struggle to figure out how I should deploy (and what changes there would be in the folder structure after deployment, especially when taking into account static resource locations).
 
-![GAE](/assets/blog/2020_06_19_Golang_Bot/GAE.png)
+![GAE](/blog/assets/blog/2020_06_19_Golang_Bot/GAE.png)
 
 I'm not sure even now that I figured it out completely, but it worked to put resources in the root of the main package (my guess is that the compilation step puts the resulting binaries parallel to the main package, but does not maintain other static data locations)
 
@@ -56,7 +56,7 @@ This initially was set up as one main (ScriptureBot) and two packages, with the 
 
 So I broke up each of the packages into smaller parts where it made sense, and wrote tests for each of the packages. I later absorbed Secrets handling into Platform handling and renamed it. This resulted in just two repositories with well ordered packages; [Platform](github.com/julwrites/BotPlatform) and [App](github.com/julwrites/ScriptureBot).
 
-![Tests.png](/assets/blog/2020_06_19_Golang_Bot/Tests.png)
+![Tests.png](/blog/assets/blog/2020_06_19_Golang_Bot/Tests.png)
 
 Ultimately this was a valuable decision; having the tests allowed me to save huge amounts of time finding bugs on production, and instead I was able to catch them early in the tests instead. Furthermore it acted as automated regression tests, so if something did break somewhere (even if it wasn't my code), I'd catch it. All these went into Github Actions to be triggered for each PR, so that I'd have a fairly high confidence that the bot would work when deployed.
 
@@ -70,7 +70,7 @@ This was probably the one I struggled with the most, and the primary reason I fo
 
 That being said, after learning the enforced structure (a repository can have multiple packages, and can import packages from other repositories) and best practices (e.g. always use full paths for imports), it was pretty smooth to use. The main hurdle was finding out that there was an enforced structure and figuring out what it was.
 
-![PackageHandling.png](/assets/blog/2020_06_19_Golang_Bot/PackageHandling.png)
+![PackageHandling.png](/blog/assets/blog/2020_06_19_Golang_Bot/PackageHandling.png)
 
 Observations:
 - Golang enforces a folder structure which also coincides with package management. A repository would typically have 1 or more packages (each source file is marked to belong to a particular package), and each package must wholly and uniquely reside in a single folder. When importing, it is best to import using the full path (e.g. github.com/julwrites/ScriptureBot/app).

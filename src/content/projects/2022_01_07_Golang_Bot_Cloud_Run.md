@@ -2,7 +2,7 @@
 title: "Migrating my Golang Bot to Google Cloud Run"
 description: "Prior to this, I had hosted my Telegram Bot on Google Cloud App Engine"
 pubDate: "Jan 07 2022"
-heroImage: "/assets/blog/2022_01_07_Golang_Bot_Cloud_Run/Cloud_Run.png"
+heroImage: "/blog/assets/blog/2022_01_07_Golang_Bot_Cloud_Run/Cloud_Run.png"
 ---
 
 Prior to this, I had hosted my Telegram Bot on Google Cloud App Engine, and this had worked decently well - for years, I might add - until recently I did a routine check on my bill statements and discovered that I had a $3 charge from Google. 
@@ -51,7 +51,7 @@ gcloud auth configure-docker \
   "${ARTIFACT_REGISTRY_REGION}-docker.pkg.dev" 
 ```
 
-![Service_Accounts.png](/assets/blog/2022_01_07_Golang_Bot_Cloud_Run/Service_Accounts.png)
+![Service_Accounts.png](/blog/assets/blog/2022_01_07_Golang_Bot_Cloud_Run/Service_Accounts.png)
 
 This wasn't too difficult. I had to create a service account on GCloud and prepare the key, and I was able to authenticate Docker on my machine against Google Artifact Registry. 
 
@@ -69,8 +69,8 @@ gcloud run deploy $CLOUD_RUN_SERVICE_NAME \
 
 It was pretty easy to verify these processes succeeded, just by checking the Artifact Registry and Cloud Run panels respectively. 
 
-![Artifact_Registry.png](/assets/blog/2022_01_07_Golang_Bot_Cloud_Run/Artifact_Registry.png)
-![Cloud_Run.png](/assets/blog/2022_01_07_Golang_Bot_Cloud_Run/Cloud_Run.png)
+![Artifact_Registry.png](/blog/assets/blog/2022_01_07_Golang_Bot_Cloud_Run/Artifact_Registry.png)
+![Cloud_Run.png](/blog/assets/blog/2022_01_07_Golang_Bot_Cloud_Run/Cloud_Run.png)
 
 Up to this point, I was able to manage quite decently, and the immediate issue was fixed within the day. 
 
@@ -85,7 +85,7 @@ I quickly discovered that Github Actions did not have the same idea of 'secure' 
 1. To set up GCloud Auth on the project
 2. A step which I forgot, and which cost me a couple of days of debugging - to authenticate Docker with GCloud Auth
 
-![Github_Actions.png](/assets/blog/2022_01_07_Golang_Bot_Cloud_Run/Github_Actions.png)
+![Github_Actions.png](/blog/assets/blog/2022_01_07_Golang_Bot_Cloud_Run/Github_Actions.png)
 
 In the process of debugging, I also went ahead and upgraded my security method to use Google Auth's Workload Identity Federation, following [this post](https://cloud.google.com/blog/products/identity-security/enabling-keyless-authentication-from-github-actions).
 

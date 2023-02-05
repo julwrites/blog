@@ -20,7 +20,7 @@ Although JSON import is now supported past Typescript 2.9, it imports as an Obje
 
 I ended up with a `contents.ts` file which had the job of pulling in any of the requisitie content pages and then exporting them so that `router.ts` coult pick them up for routing. 
 
-![contents.ts](/assets/blog/2020_04_26_Markdown_Blog/contents_ts.png)
+![contents.ts](/blog/assets/blog/2020_04_26_Markdown_Blog/contents_ts.png)
 
 ## 2. Setting up a Contents page
 
