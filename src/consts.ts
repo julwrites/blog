@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = 'Julwrites Stuff';
 export const SITE_DESCRIPTION = 'Welcome to my log';
+export const SITE_BASEPATH = "/blog";

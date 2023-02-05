@@ -2,7 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_BASEPATH } from '../../consts';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('projects')).sort(
@@ -47,7 +47,7 @@ const posts = (await getCollection('projects')).sort(
 										day: 'numeric',
 									})}
 								</time>
-								<a href={`/projects/${post.slug}/`}>{post.data.title}</a>
+								<a href={`${SITE_BASEPATH}/projects/${post.slug}/`}>{post.data.title}</a>
 							</li>
 						))
 					}
