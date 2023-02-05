@@ -2,6 +2,7 @@
 title: "Fatherhood Begins"
 description: "Yesterday my first child - Ava - was born"
 pubDate: "Jan 31 2023"
+draft: true
 ---
 
 Among the many, many things I want to do, writing has always been at the top. Problem is, I have never had much to write about. Perhaps now I do, so here I am.
