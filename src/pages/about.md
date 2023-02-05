@@ -19,6 +19,6 @@ At the time of writing, I am a R&D engineer in a company that develops hardware 
 
 I am married to a Filipino lady (who is also a software engineer), and we have one daughter. We both are Christian, and committed to the vision of Christian Disciple-making in particular.
 
-I hope that provides enough underlying context for anything you may read here. 
+I hope that provides enough underlying context for anything you may read here
 
 ### Enough said, enjoy!

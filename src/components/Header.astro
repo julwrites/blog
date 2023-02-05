@@ -1,6 +1,6 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import { SITE_TITLE, SITE_BASEPATH } from '../consts';
 ---
 
 <header>
@@ -8,10 +8,10 @@ import { SITE_TITLE } from '../consts';
 		{SITE_TITLE}
 	</h2>
 	<nav>
-		<HeaderLink href="${import.meta.env.BASE_URL}/">Home</HeaderLink>
-		<HeaderLink href="${import.meta.env.BASE_URL}/about">About</HeaderLink>
-		<HeaderLink href="${import.meta.env.BASE_URL}/projects">Projects</HeaderLink>
-		<HeaderLink href="${import.meta.env.BASE_URL}/blog">Blog</HeaderLink>
+		<HeaderLink href={ `${SITE_BASEPATH}/` }>Home</HeaderLink>
+		<HeaderLink href={ `${SITE_BASEPATH}/about` }>About</HeaderLink>
+		<HeaderLink href={ `${SITE_BASEPATH}/projects` }>Projects</HeaderLink>
+		<HeaderLink href={ `${SITE_BASEPATH}/blog` }>Blog</HeaderLink>
 		<a href="https://www.tehj.io">More</a>
 	</nav>
 </header>
