@@ -47,7 +47,7 @@ const posts = (await getCollection('projects')).sort(
 										day: 'numeric',
 									})}
 								</time>
-								<a href={`/projects/${post.slug}/`}>{post.data.title}</a>
+								<a href={`${import.meta.env.BASE_URL}/projects/${post.slug}/`}>{post.data.title}</a>
 							</li>
 						))
 					}
