@@ -2,7 +2,7 @@
 title: "Next.js/Vercel with React/TS website for my Wedding"
 description: "As my wedding was approaching, I thought; what better way to motivate myself for a project than to build a website for my wedding?"
 pubDate: "Mar 29 2021"
-heroImage: "/assets/blog/2021_03_29_React_Website/Livestream.png"
+heroImage: "/blog/assets/blog/2021_03_29_React_Website/Livestream.png"
 ---
 
 As my wedding was approaching, I thought; what better way to motivate myself for a project than to build a website for my wedding? So I started out with the following goals:
@@ -26,8 +26,8 @@ We soon settled on the following tech stack:
 
 This worked out pretty well; following a couple of tutorials and getting some help from a friend to learn how to use React, I was soon on my way to being able to develop more or less independently and make any tweaks necessary for data updates or layout changes.
 
-![Invite.png](/assets/blog/2021_03_29_React_Website/Invite.png)
-![Livestream.png](/assets/blog/2021_03_29_React_Website/Livestream.png)
+![Invite.png](/blog/assets/blog/2021_03_29_React_Website/Invite.png)
+![Livestream.png](/blog/assets/blog/2021_03_29_React_Website/Livestream.png)
 
 It was quite eye-opening to work with both Server-Side Rendering through `GetServerSideProps` as well as Client-side `useEffect`, `useState` and the React `.tsx` syntax for HTML manipulation. It was even more eye-opening to work with Prisma's API, and realizing that it would only run on server-side calls (as well as how to make these calls from the Client-side).
 

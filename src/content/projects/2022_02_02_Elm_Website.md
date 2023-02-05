@@ -2,7 +2,7 @@
 title: "Re-writing my website in Elm"
 description: "I had been gaining interest in Functional Programming and its' paradigms for awhile, and looking for a small project to do with it."
 pubDate: "Feb 02 2022"
-heroImage: "/assets/blog/2022_02_02_Elm_Website/Home_Page.png"
+heroImage: "/blog/assets/blog/2022_02_02_Elm_Website/Home_Page.png"
 ---
 
 I had been gaining interest in Functional Programming and its' paradigms for awhile, and looking for a small project to do with it. 
@@ -33,15 +33,15 @@ At this point it felt not so different from Vue 2, except that I was working in 
 
 There was just one issue; I couldn't get the images to render according to the width of the window. To resolve that, I had to write my own Markdown parser so that I could control the dynamic sizing of the elements. Unfortunately, I didn't find a solution for code blocks resizing (surely my own ignorance).
 
-![Broken_Codeblock.png](/assets/blog/2022_02_02_Elm_Website/Broken_Codeblock.png)
+![Broken_Codeblock.png](/blog/assets/blog/2022_02_02_Elm_Website/Broken_Codeblock.png)
 
 ## Setting up CI/CD
 
 Once all the pieces were in place, I modified the CI/CD script I had on Github Actions. I had to change it a little - for some reason I could use Yarn on my device, but it would fail on Github Actions - to use NPM instead. 
 
-![Github_Actions.png](/assets/blog/2022_02_02_Elm_Website/Github_Actions.png)
+![Github_Actions.png](/blog/assets/blog/2022_02_02_Elm_Website/Github_Actions.png)
 
 Other than that, everything looks and runs smoothly, and I'm pretty pleased with this. I'll probably revisit it again sometime in the future to fix the code blocks and other such things, but for now this works.
 
-![Home_Page.png](/assets/blog/2022_02_02_Elm_Website/Home_Page.png)
+![Home_Page.png](/blog/assets/blog/2022_02_02_Elm_Website/Home_Page.png)
 

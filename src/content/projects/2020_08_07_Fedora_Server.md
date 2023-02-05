@@ -2,7 +2,7 @@
 title: "Setting up a Fedora Server on an old laptop"
 description: "I decided that this would be a good opportunity for me to try experimenting further with Linux administration"
 pubDate: "Aug 07 2020"
-heroImage: "/assets/blog/2020_08_07_Fedora_Server/Cockpit.png"
+heroImage: "/blog/assets/blog/2020_08_07_Fedora_Server/Cockpit.png"
 ---
 
 Several years back, I had loaned my old laptop to one of my mentees, because he didn't have his own. This year, since he was about to start University, he had gotten himself a swanky new one, and so the old laptop returned to me. Seeing as I now had an unused piece of hardware on my hands, I decided that this would be a good opportunity for me to try experimenting further with Linux administration.
@@ -21,12 +21,12 @@ So I connected it via Ethernet cable, finished the install, installed `wpa_suppl
 
 A [few steps later](https://cockpit-project.org/running.html) I had Cockpit started up and connecting on wifi as well as ethernet.
 
-![CockpitLogin.png](/assets/blog/2020_08_07_Fedora_Server/CockpitLogin.png)
-![Cockpit.png](/assets/blog/2020_08_07_Fedora_Server/Cockpit.png)
+![CockpitLogin.png](/blog/assets/blog/2020_08_07_Fedora_Server/CockpitLogin.png)
+![Cockpit.png](/blog/assets/blog/2020_08_07_Fedora_Server/Cockpit.png)
 
 It was pretty sleek, to be honest, and I was quite impressed at how much I could do on it. It even had a terminal which allowed me to do most administration tasks.
 
-![Terminal.png](/assets/blog/2020_08_07_Fedora_Server/Terminal.png)
+![Terminal.png](/blog/assets/blog/2020_08_07_Fedora_Server/Terminal.png)
 
 Then I attempted to create a Virtual Machine, thinking that I could try running a desktop VM on it, and expose it for use. I was getting pretty impressed at how easy it was to [create and launch a VM in Cockpit](https://fedoramagazine.org/create-virtual-machines-with-cockpit-in-fedora/) when... I didn't have space? It seemed that there was a problem with the drive management on my machine. Naturally, this meant that my virtual disk couldn't be allocated, and when I attempted to `fdisk` away the problem... I `fdisk`-ed away my partition. One reboot later, I was back to square one.
 
@@ -36,12 +36,12 @@ I started looking around my terminal to try and figure out what exactly was miss
 
 Now armed with this knowledge, I installed `cockpit.storaged`, rebooted the server, and now I could create a new logical volume. I created this, mounted it onto `/dev/vmvol`, and created a new storage pool for Virtual Machines.
 
-![Storage.png](/assets/blog/2020_08_07_Fedora_Server/Storage.png)
-![VM.png](/assets/blog/2020_08_07_Fedora_Server/VM.png)
+![Storage.png](/blog/assets/blog/2020_08_07_Fedora_Server/Storage.png)
+![VM.png](/blog/assets/blog/2020_08_07_Fedora_Server/VM.png)
 
 Creating the VM was a little tricky due to storage. It turns out that the Virtual Machine Storage Pool was expecting `XFS` type storage, and that a Storage Volume had to be created within the Storage Pool before the VM could be created. With that up, however, it was a cinch to get a Virtual Machine workstation up and running and streaming on Cockpit. Very cool.
 
-![VMSuccess.png](/assets/blog/2020_08_07_Fedora_Server/VMSuccess.png)
+![VMSuccess.png](/blog/assets/blog/2020_08_07_Fedora_Server/VMSuccess.png)
 
 This worked decently, and I was able to install Ubuntu in a VM on the server, boot it up, and access it both through Cockpit's VNC viewer as well as directly from my desktop VNC viewer.
 
@@ -49,8 +49,8 @@ I then decided to host a [code-server](https://github.com/cdr/code-server) in a 
 
 Both as a stopgap measure, and also as a way of exploring, I decided to install [Portainer](https://portainer.io), which could be installed as a Docker container in my server, and manage other docker containers; seemed like a good alternative. It was quite easy to [set up Portainer](https://www.linuxuprising.com/2019/05/portainer-web-based-docker-gui-for.html), now that I had Docker up and running, and the web dashboard was quickly available.
 
-![Portainer.png](/assets/blog/2020_08_07_Fedora_Server/Portainer.png)
-![PortainerConsole.png](/assets/blog/2020_08_07_Fedora_Server/PortainerConsole.png)
+![Portainer.png](/blog/assets/blog/2020_08_07_Fedora_Server/Portainer.png)
+![PortainerConsole.png](/blog/assets/blog/2020_08_07_Fedora_Server/PortainerConsole.png)
 
 In short, on top of my fedora server set up, I had to install the following packages:
 - Wifi device:
