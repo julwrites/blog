@@ -160,6 +160,13 @@ declare module 'astro:content' {
   collection: "projects",
   data: InferEntrySchema<"projects">
 },
+"2023_02_09_Multi_Page_Application_Elm_Astro.md": {
+  id: "2023_02_09_Multi_Page_Application_Elm_Astro.md",
+  slug: "2023_02_09_multi_page_application_elm_astro",
+  body: string,
+  collection: "projects",
+  data: InferEntrySchema<"projects">
+},
 },
 
 	};
