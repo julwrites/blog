@@ -1,7 +1,7 @@
 ---
 title: "Multi-page Application with Elm and Astro"
 description: "I wanted to try yet another frontend framework, so I decided to split off my blog"
-pubDate: "Jan 09 2023"
+pubDate: "Feb 09 2023"
 ---
 
 I wanted to do more writing outside of my project log, partly as a way for me to just practice writing, and partly so I could have a form of expression for my thoughts. 
