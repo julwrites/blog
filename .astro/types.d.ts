@@ -160,9 +160,30 @@ declare module 'astro:content' {
   collection: "projects",
   data: InferEntrySchema<"projects">
 },
+"2023_01_23_Homeassistant_Kubernetes.md": {
+  id: "2023_01_23_Homeassistant_Kubernetes.md",
+  slug: "2023_01_23_homeassistant_kubernetes",
+  body: string,
+  collection: "projects",
+  data: InferEntrySchema<"projects">
+},
 "2023_02_09_Multi_Page_Application_Elm_Astro.md": {
   id: "2023_02_09_Multi_Page_Application_Elm_Astro.md",
   slug: "2023_02_09_multi_page_application_elm_astro",
+  body: string,
+  collection: "projects",
+  data: InferEntrySchema<"projects">
+},
+"2023_02_11_PiVPN_PiHole.md": {
+  id: "2023_02_11_PiVPN_PiHole.md",
+  slug: "2023_02_11_pivpn_pihole",
+  body: string,
+  collection: "projects",
+  data: InferEntrySchema<"projects">
+},
+"2023_02_11_Replacing_Bicycle_Parts.md": {
+  id: "2023_02_11_Replacing_Bicycle_Parts.md",
+  slug: "2023_02_11_replacing_bicycle_parts",
   body: string,
   collection: "projects",
   data: InferEntrySchema<"projects">
