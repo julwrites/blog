@@ -2,7 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_BASEPATH } from '../../consts';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_BASEPATH, SITE_THEME, SITE_COLOR_MODE } from '../../consts';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('projects')).sort(
@@ -11,7 +11,7 @@ const posts = (await getCollection('projects')).sort(
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class={SITE_COLOR_MODE}>
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
@@ -32,7 +32,7 @@ const posts = (await getCollection('projects')).sort(
 			}
 		</style>
 	</head>
-	<body class="prose dark:bg-neutral-800 dark:prose-invert">
+	<body class={SITE_THEME}>
 		<Header />
 		<main>
 			<section>
