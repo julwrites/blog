@@ -7,6 +7,6 @@ draft: true
 
 ## Fatherhood is Stewardship
 
-## Stewardship is Responsibility
+## Work is Stewardship
 
-
+## Perspective of Stewardship
