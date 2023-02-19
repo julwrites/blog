@@ -11,7 +11,7 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
@@ -32,7 +32,7 @@ const posts = (await getCollection('blog')).sort(
 			}
 		</style>
 	</head>
-	<body>
+	<body class="prose dark:bg-neutral-800 dark:prose-invert">
 		<Header />
 		<main>
 			<section>
