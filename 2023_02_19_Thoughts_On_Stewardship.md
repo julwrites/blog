@@ -13,9 +13,19 @@ One of the Bible verses which has influenced me greatly in this regard is Luke 1
 
 Perhaps my view is somewhat limited, but I think I consume much the same media as the average first-world citizen. And in this media I see a few messages which are worrying - mostly because they are effective in influencing those who are still forming their own world view. 
 
-One of these messages is the idea that we deserve better. Now, I wish everyone did get better, but I take issue with the idea that everyone deserves better. This implies that everyone has unassailable rights, and that these rights must be accorded them no matter the circumstance. The right to free speech, for example, or the right to love.
+One of these messages is the idea that we deserve better. Now, I wish everyone did get better, but I take issue with the idea that everyone deserves better. This implies that everyone has unassailable rights, and that these rights must be accorded them no matter the circumstance. The right to free speech, for example, or the right to love. 
+
+I think rights come with responsibilities, and perhaps responsibilities that privileged individuals may forget. The right to free speech, for example, comes with the responsibilities of being held accountable for what you say. It is no use claiming the right of free speech if you use it only to lie and cheat and steal. 
+
+In much the same way I think all other rights come with responsibilities; some more, and some less. 
+
+But we must not stop here. This is not yet stewardship.Stewardship is 
 
 ## Fatherhood is Stewardship
+
+In this sense, Fatherhood is a right. It is my right as a guardian of my daughter to make decisions for her. It is my right to decide her nationality, her name, her passport photo, with or without her consent. 
+
+With it, it is my responsibility to protect and provide for her until she is able to do so for herself.
 
 ## Work is Stewardship
 
