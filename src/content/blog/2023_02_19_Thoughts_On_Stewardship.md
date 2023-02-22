@@ -2,7 +2,6 @@
 title: "Thoughts on Stewardship"
 description: "Recently I was talking to a mentee about work"
 pubDate: "Feb 19 2023"
-draft: true
 ---
 
 Recently I was talking with one of my mentees, and we were discussing his decision-making process with regard to higher education. I was encouraging him to think longer-term, as I often do with my mentees, and to consider what he was really hoping to do with his life and career. 
@@ -19,13 +18,15 @@ I think rights come with responsibilities, and perhaps responsibilities that pri
 
 In much the same way I think all other rights come with responsibilities; some more, and some less. 
 
-But we must not stop here. This is not yet stewardship.Stewardship is 
+But I think we must not stop here. This is not yet stewardship. Stewardship is not merely that we ought to fulfill a set of responsibilities for every right we may claim. Stewardship is that we are entrusted with that which we did not earn, and must account for in the future. 
 
 ## Fatherhood is Stewardship
 
 In this sense, Fatherhood is a right. It is my right as a guardian of my daughter to make decisions for her. It is my right to decide her nationality, her name, her passport photo, with or without her consent. 
 
-With it, it is my responsibility to protect and provide for her until she is able to do so for herself.
+With it, it is my responsibility to protect and provide for her until she is able to do so for herself. 
 
-## Work is Stewardship
+But more than that, I am a steward of this gift of life given to my wife and I. I have been entrusted a life - something I did not and could never have earned - and I must account for her in the future to the one who entrusted her to me.
+
+This defines my Fatherhood. I am not merely responsible, I am accountable. I am not merely an authority, I am a steward. My child is not mine to own, but mine to nurture. 
 
