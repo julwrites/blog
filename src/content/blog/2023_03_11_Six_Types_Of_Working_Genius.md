@@ -29,7 +29,7 @@ I'm excited about this, maybe because it is a shiny new thing and I love shiny n
 
 ## I am fortunate
 
-The two types of Working Genius I identified for myself were Wonder and Innovation, while the two Working Frustrations are Galvanizing and Enabling. The Working Competencies therefore are Discernment and Tenacity. In other words, I love to think about shiny new ideas, and I'm able to put in the work to evaluate a shiny new idea and bring it to completion myself. Where I really struggle is in inspiring others to pick up the shiny new idea, and jumping on others' shiny new idea. I realize I have said shiny new idea a lot, but that does seem fitting.
+The two types of Working Genius I identified for myself were Innovation and Discernment, while the two Working Frustrations are Galvanizing and Enabling. The Working Competencies therefore are Wonder and Tenacity. In other words, I love to work on shiny new ideas, and I'm able to evaluate whether a shiny new idea is really all that valuable. Where I really struggle is in inspiring others to pick up the shiny new idea, and jumping on others' shiny new idea. I realize I have said shiny new idea a lot, but that does seem fitting.
 
 I consider myself fortunate to have landed a position where my Working Genius - the two areas which energize me and give me joy - is a close match for my role and responsibilities, and my Working Competencies - the two which we neither like nor dislike - are both useful in my role. On the flip side, I see why I had such an aversion to the work I did increasingly in Autodesk as I moved up the engineering ladder, which fell directly into my Working Frustration - the two which drain me and make me frustrated. 
 
