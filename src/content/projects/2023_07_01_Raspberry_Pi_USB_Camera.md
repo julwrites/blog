@@ -1,5 +1,5 @@
 ---
-title: "Using Raspberry Pi 3B+ as USB Camera"
+title: "Trying to make a USB Camera from Raspberry Pi 3B+"
 description: "I didn't have a camera on my Mac Mini, but I did have a Raspberry Pi and Pi Cam"
 pubDate: "July 1 2023"
 heroImage: "/blog/assets/blog/2023_07_01_Raspberry_Pi_USB_Camera/libcamera_test.png"
@@ -13,7 +13,7 @@ I did some research on options for a web camera, but something about having to b
 
 ## Raspberry Pi 3B+ and Pi Camera
 
-I followed this [article](https://www.raspberrypi.com/tutorials/plug-and-play-raspberry-pi-usb-webcam/) from Raspberry Pi's official website, which was the only one claiming it could run on Raspberry Pi 3B+ (which was the only Pi I had free which was able to plug in my rather old Pi Camera rev1.3).
+I followed this [article](https://www.raspberrypi.com/tutorials/plug-and-play-raspberry-pi-usb-webcam/) from Raspberry Pi's official website, which was the only one claiming it could run on Raspberry Pi 3B+ (which was the only Pi I had free which was able to plug in my 5MP Pi Camera rev1.3 FFC). There were others - including this one - which claimed to work well with the Pi Zero W, but I didn't have the FFC for that, and I wanted to see if I could get it working without having to buy anything more. 
 
 After a lot of trial and error, I finally came down to booting up the Pi and then trying to start up the script manually so that I could observe the output. This showed me 'no cameras available', and after a little digging with this error message, I unearthed this [libcamera Github issue](https://github.com/raspberrypi/libcamera-apps/issues/125). 
 
@@ -38,9 +38,10 @@ After some research, I finally found an [article](https://raspberrypi.stackexcha
 
 And given that I didn't have another type of Raspberry Pi (I only have B's), this camera module seemed doomed to be a video monitor of sorts, rather than a USB Camera like I had hoped.
 
-Looks I'll be getting a Logitech camera after all. 
+Looks I'll be getting a Pi Zero camera module after all. 
 
 ## Other options
 
 I won't document the next step, since it seems like it might not be much interesting detail, but here are some options I have for the Raspberry Pi.
 - [PiWebcam](https://github.com/piwebcam/PiWebcam)
+- [MJPG Streamer](https://www.tomshardware.com/how-to/use-raspberry-pi-as-pc-webcam)
