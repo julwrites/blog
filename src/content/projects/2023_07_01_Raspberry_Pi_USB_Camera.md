@@ -44,4 +44,4 @@ Looks I'll be getting a Pi Zero camera module after all.
 
 I won't document the next step, since it seems like it might not be much interesting detail, but here are some options I have for the Raspberry Pi.
 - [PiWebcam](https://github.com/piwebcam/PiWebcam)
-- [MJPG Streamer](https://www.tomshardware.com/how-to/use-raspberry-pi-as-pc-webcam)
+- [MJPG Streamer](https://github.com/jacksonliam/mjpg-streamer)
